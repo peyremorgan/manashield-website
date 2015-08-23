@@ -1,0 +1,67 @@
+.image2{
+    margin-top:15px;transition:transform2s;
+}
+
+.image2:hover{
+    transform:rotateY(180deg);
+}
+
+.main-col{
+    background-color:black;margin-bottom:250px;border-image:url();
+}
+
+.inner-row{
+    padding-left:20px;margin-top:30px
+}
+
+.polaroid{
+    padding-top:0px;
+    background-color:#DEDEDE;
+    border:10px solid transparent;
+    border-image:url(http://images.clipartpanda.com/border-clipart-Old_style_border_Vector_Clipart.png) 54 stretch;
+}
+
+.centre{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.header {
+    margin-top:1px
+}
+    
+.header img{
+    float:left;
+    border:1px solid #262632;
+}
+
+.header img:hover{
+    cursor: pointer;border: 1px solid #305A75;
+}
+
+.img-right{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.img-left{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.image-row{
+    margin-top:20px;
+}
+
+a{
+    color:black;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color:black;
+}
