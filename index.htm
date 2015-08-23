@@ -24,58 +24,57 @@
 
 		<div class="row inner-row" ng-controller="frontpage">
 
-			<a href="http://ensminecraft.manashield.fr/jsh">
-				<div class="col-sm-4 col-sm-offset-1 polaroid" ng-mouseover="jshHide=false" ng-mouseleave="jshHide=true" ng-init="jshHide=true">
-					<div class="row">
-						<img id="borderimg1" class="centre" src="img/jsh.png" width="100%">
-					</div>
-					<div class="row" style="text-align: center">
-						<h1>J S H</h1>
-						<p>
-							A clone of the great Game Super Hexagon.
-						</p>
-						<div ng-hide="jshHide">
+			<div class="row under-row" ng-repeat="game in gameList">
+				<a href="http://ensminecraft.manashield.fr/jsh">
+					<div class="col-sm-4 col-sm-offset-1 polaroid" ng-mouseover="game[0].descHide=false" ng-mouseleave="game[0].descHide=true" ng-init="game[0].descHide=true">
+						<div class="row">
+							<img class="centre" src="{{game[0].imgUrl}}" width="100%">
+						</div>
+						<div class="row" style="text-align: center">
+							<h1>{{game[0].title}}</h1>
 							<p>
-								You play the little arrow and have to dodge the obstacles coming at you by moving around the central hexagon.
+								{{game[0].shortDesc}}
 							</p>
-							<p>
-								Controls : 
-								<ul>
-									<li>left arrow / left click : clockwise</li>
-									<li>right arrow / right click : anti-clockwise</li>
-								</ul>
-							</p>
+							<div ng-hide="game[0].descHide">
+								<p>
+									{{game[0].desc}}
+								</p>
+								<p>
+									Controls : 
+									<ul>
+										<li ng-repeat="control in game[0].controls">{{control}}</li>
+									</ul>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</a>
+				</a>
 
-			<a href="img-right/thex">
-				<div class="col-sm-4 col-sm-offset-2 polaroid" ng-mouseover="thexHide=false" ng-mouseleave="thexHide=true" ng-init="thexHide=true">
-					<div class="row">
-						<img class="centre" src="img/thex.png" width="100%">
-					</div>
-					<div class="row" style="text-align: center">
-						<h1>T H E X</h1>
-						<p>
-							A gravity enabled bubble shooter tetris.
-						</p>
-						<div ng-hide="thexHide">
+				<a href="http://ensminecraft.manashield.fr/thex">
+					<div class="col-sm-4 col-sm-offset-1 polaroid" ng-mouseover="game[1].descHide=false" ng-mouseleave="game[1].descHide=true" ng-init="game[1].descHide=true">
+						<div class="row">
+							<img class="centre" src="{{game[1].imgUrl}}" width="100%">
+						</div>
+						<div class="row" style="text-align: center">
+							<h1>{{game[1].title}}</h1>
 							<p>
-								You have to pop all the colored tiles by putting 3 or more together. Be carefull, the tiles always go toward the black one !
+								{{game[1].shortDesc}}
 							</p>
-							<p >
-								Controls:
-								<ul>
-									<li>left arrow : clockwise</li>
-									<li>right arrow : anti-clockwise</li>
-									<li>down arrow : fast fall</li>
-								</ul>
-							</p>
+							<div ng-hide="game[1].descHide">
+								<p>
+									{{game[1].desc}}
+								</p>
+								<p>
+									Controls : 
+									<ul>
+										<li ng-repeat="control in game[1].controls">{{control}}</li>
+									</ul>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</a>
+				</a>
+			</div>
 
 		</div>
 	</div>
