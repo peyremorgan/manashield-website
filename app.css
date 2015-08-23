@@ -52,11 +52,25 @@
 
 .image-row{
     margin-top:20px;
+    margin-bottom: -50px;
     text-align: center;
 }
 
 .image-row h1{
-    color: #f5f5ff
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
+    color: #f5f5ff;
+    position: relative;
+    top : -100px;
+}
+
+.polaroid h1{
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
+}
+
+h1{
+    text-align: center;
 }
 
 p {
