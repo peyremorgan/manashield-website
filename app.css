@@ -52,16 +52,21 @@
 
 .image-row{
     margin-top:20px;
+    text-align: center;
+}
+
+p {
+    color:#0C0C0C;
 }
 
 a{
-    color:black;
+    color: inherit;
 }
 
 a:visited{
-    color:black;
+    color: inherit;
 }
 
 a:hover{
-    color:black;
+    color: inherit;
 }
